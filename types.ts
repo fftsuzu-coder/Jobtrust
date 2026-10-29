@@ -1,0 +1,2 @@
+export type Verification = "verified" | "pending" | "unverified" | "demo";
+export type Job = { id: string; title: string; company: string; verification: Verification; location: string; type: "Full-time" | "Part-time" | "Internship" | "Remote"; category: string; expMin: number; salaryMin?: number; salaryMax?: number; posted: string; description: string; requirements: string[]; applyUrl?: string; flags: string[]; demo: boolean };
